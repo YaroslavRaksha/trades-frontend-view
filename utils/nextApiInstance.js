@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const nextApiInstance = axios.create({
-    baseURL: 'http://localhost:3000/', // 'https://trades-frontend.vercel.app'
+    baseURL: 'https://trades-frontend-view.vercel.app',
     headers: {
         'Content-Type': 'application/json',
     }
