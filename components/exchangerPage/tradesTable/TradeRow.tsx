@@ -1,5 +1,5 @@
 import styles from "../../../styles/Exchanger.module.css";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 type Props = {
     id: number,
