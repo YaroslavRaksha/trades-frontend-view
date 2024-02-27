@@ -16,6 +16,13 @@ const TradeRow = ({ amount, course, time, }: Props) => {
         course: course,
     });
 
+    useEffect(() => {
+        setTradeDataState({
+            amount: amount,
+            course: course,
+        })
+    }, [amount, course])
+
     return (
         <div className={styles.rowWrapper}>
             {['amount', 'course'].map((key: any) => (
