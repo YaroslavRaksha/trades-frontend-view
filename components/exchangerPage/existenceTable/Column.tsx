@@ -19,6 +19,10 @@ const Column = ({ currency, amount, dataLength }: Props) => {
 
     const [amountState, setAmountState] = useState(amount);
 
+    useEffect(() => {
+        setAmountState(amount)
+    }, [amount]);
+
     return (
         <div className={styles.existenceColumn} style={{
             flexBasis: isMobile ? '33.333%' : (dataLength > 4 ? '20%' : `${100 / dataLength}%`)
