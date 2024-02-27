@@ -25,7 +25,7 @@ const ExistenceTable = ({ title, data }: Props) => {
             <div className={styles.existenceWrapper}>
                 {data?.sort(customSort)?.map(({ currency, amount }, index) =>
                     <Column
-                        key={index}
+                        key={title}
                         currency={currency}
                         amount={amount}
                         dataLength={data?.length}
