@@ -27,7 +27,7 @@ const TradesTable = ({ title, data, }: Props) => {
                 {data?.length > 0 && data.map(({ id, amount, course, time }, index) => (
                     <TradeRow
                         id={id}
-                        key={index}
+                        key={id}
                         amount={amount}
                         course={course}
                         time={time}
